@@ -1,0 +1,32 @@
+.full-height {
+    height: 100%;
+    background-color: #000080;
+}
+
+.nav-item {
+    border-bottom: 1px solid lightblue;
+}
+
+.form-control {
+    border-radius: 0;
+    border: none;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid grey;
+}
+
+.estr-search {
+    height: 70px;
+}
+
+.icon-size {
+    font-size: 32px
+}
+
+.estr-icon {
+    float: left;
+}

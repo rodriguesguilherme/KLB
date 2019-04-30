@@ -1,0 +1,58 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <app-menu></app-menu>
+      </div>
+      <div class="col-md-9">
+        <nav class="nav-height bg-white">
+          <div class="container">
+            <div class="d-flex justify-content-start float-left mt-1">
+              <img src="" width="30" height="30" class="d-inline-block align-top">
+            </div>
+
+            <div class="d-flex justify-content-end mt-3">
+              <label class="mr-2 mt-2 float-left">Grupo Economico: </label>
+              <select class="form-control float-left w-25">
+                <option>Visão Agregada 1</option>
+                <option>Visão Agregada 2</option>
+                <option>Visão Agregada 3</option>
+                <option>Visão Agregada 4</option>
+                <option>Visão Agregada 5</option>
+              </select>
+              <div class="float-left ml-3 box bg-user">
+                <i class="mt-custom icon-size fas fa-user text-muted"></i>
+              </div>
+              <div class="dropdown float-left">
+                <div class="btn-group" dropdown>
+                  <button id="button-basic" dropdownToggle type="button"
+                    class="rounded-0 text-muted btn bg-user dropdown-toggle" aria-controls="dropdown-basic">
+                    {{ userName }} <span class="caret"></span>
+                  </button>
+                  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                    aria-labelledby="button-basic">
+                    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li class="divider dropdown-divider"></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="float-left box bg-notification">
+                <i class="mt-custom icon-size fas fa-bell text-muted"></i>
+                <span class="ml-n1 rounded-circle badge text-white bg-danger">4</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <app-painel-gestao></app-painel-gestao>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

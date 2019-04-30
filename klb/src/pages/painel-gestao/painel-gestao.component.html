@@ -1,0 +1,97 @@
+<div class="estr-painel">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb rounded-0">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+
+    <div class="d-flex justify-content-start float-left">
+      <i class="ml-3 mr-3 icon-title fas fa-globe"></i>
+      <p class="title mt-n1">Painel de Gestão</p>
+    </div>
+
+    <div class="d-flex justify-content-end">
+      <label class="mr-2 mt-2 float-left">Produto: </label>
+      <select class="form-control float-left w-25">
+        <option>Todos</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="float-left w-100 mt-4">
+      <div class="estr-atalho float-left shadow">
+        <div class="card-header">
+          Atalhos
+        </div>
+        <div class="card-body">
+          <div class="estr-operacional">
+            <p class="float-left">Operacional</p>
+            <div class="row w-100 ml-0">
+              <div class="col-md-5">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Envio</button>
+              </div>
+              <div class="col-md-5">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Assinatura</button>
+              </div>
+              <div class="col-md-5">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Envio de Duplicatas</button>
+              </div>
+              <div class="col-md-5">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Assinatura Digital</button>
+              </div>
+              <div class="col-md-5">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Nova Operação</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="estr-geral">
+            <p class="float-left">Geral</p>
+            <div class="row w-100 ml-0">
+              <div class="col-md-12">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Carteira</button>
+              </div>
+              <div class="col-md-12">
+                <button type="button" class="w-100 mb-3 btn btn-outline-primary">Instruções</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="estr-alerta float-left shadow">
+        <div class="card-header">
+          Alertas
+          <span class="float-right mr-4">Ultimos 5 dias</span>
+        </div>
+        <div class="card-body">
+          <div class="container mt-3">
+            <div class="lista-alerta">
+              <p>23 notas canceladas</p>
+            </div>
+            <div class="lista-alerta">
+              <p>13 notas canceladas</p>
+              <select class="form-control-sm m-2 float-right w-50">
+                <option *ngFor='let acao of acoes'>
+                  {{ acao }}
+                </option>
+              </select>
+            </div>
+            <div class="lista-alerta">
+              <p>7 assinaturas digitais</p>
+              <select class="form-control-sm m-2 float-right w-50">
+                <option *ngFor='let acao of acoes'>
+                  {{ acao }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

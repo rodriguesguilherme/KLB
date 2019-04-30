@@ -1,0 +1,25 @@
+.col-md-3,.col-md-9 {
+    padding: 0;
+}
+
+.nav-height {
+    height: 55px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 50px;
+    height: 38px;
+}
+
+.bg-user {
+    background-color: #000080;
+}
+
+.bg-notification {
+    background-color: cyan;
+}
+
+.mt-custom {
+    margin-top: 10px;
+}
